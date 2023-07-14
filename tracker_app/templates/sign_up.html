@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>Sign Up | Inventory Tracker</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    <link href="https://app.closeiocdn.com/dist/signup~748942c6.0ac0994492018d15c322.css" rel="stylesheet"
+        integrity="sha256-JZB63FIkvU54pIHg1A2AntOj8ldPi3yLLkL7TblxZkM= sha384-5EeU7qD7rplbsvsVOKn52zKPwybUlzepKn6F2xJqsXLRx5UFIZcK1bKYP0d/BJqK"
+        crossorigin="anonymous">
+    <link href="https://app.closeiocdn.com/dist/signup~5c451404.0ac0994492018d15c322.css" rel="stylesheet"
+        integrity="sha256-0wKBUnrF+anvTbu8A2suuURbgkrtgbLLl10S8Izj73s= sha384-opxs2sSeaY/WpwgtqNakaY/UmT3BSTsXWZHoAY0DUmAnzfsA5wW1dNddyXTMotaS"
+        crossorigin="anonymous">
+    <link href="https://app.closeiocdn.com/dist/signup~01d99f6b.0ac0994492018d15c322.css" rel="stylesheet"
+        integrity="sha256-GsIhfowtItHWoqfq2G0f7mZy+h7+FZlpF/Lj4TsHZWA= sha384-M3+eJ3x2xGE8Zki2MkXZEjve40uHQvtlf+K6pMqXUipXm7hFkJxGc+NiR0hzvN0G"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    
+    <div id="main">
+        <div class="signup_App_app_2c9">
+            <div class="layout_main_23d">
+                <div class="layout_content_df7">
+
+                    <div class="layout_form_6c8">
+                        <div class="RegistrationScreen_withGoogleSSO_b0b">
+                            <h3 class="RebrandHeading_heading_5a4 RebrandHeading_centered_bed">Start Your Journey Today
+                                </h3>
+
+                            <!--  FORM ******************************************-->
+                            <div
+                                class="RegistrationScreen_SignUpForm_inputs_a1b RegistrationScreen_SignUpForm_fluid_79f">
+                                <form action="{% url 'create_user' %}" method="POST">
+                                    {% csrf_token %}
+                                    <div class="Field_content_552 Field_errorBottom_f7c"><label
+                                            class="InputField_label_033">First Name</label><input
+                                            class="InputField_input_40b" type="text" name="firstName"
+                                            autocomplete="given-name" value=""></div>
+                                    <div class="Field_content_552 Field_errorBottom_f7c"><label
+                                            class="InputField_label_033">Last Name</label><input
+                                            class="InputField_input_40b" type="text" name="lastName"
+                                            autocomplete="family-name" value=""></div>
+                                    <div class="Field_content_552 Field_errorBottom_f7c"><label
+                                            class="InputField_label_033">Email</label><input
+                                            class="InputField_input_40b" type="email" name="email"
+                                            autocomplete="username email" value=""></div>
+                                    <div class="Field_content_552 Field_errorBottom_f7c"><label
+                                            class="InputField_label_033">Password</label><input
+                                            class="InputField_input_40b" type="password" name="password"
+                                            autocomplete="username password" value=""></div>
+
+                                    <div class="RegistrationScreen_SignUpForm_cta_0b8"><button type="submit"
+                                            class="Button_button_2b4 Button_large_ced"><span
+                                                class="Button_buttonText_4d6">Join
+                                                Inventory Tracker</span></button></div>
+                                </form>
+                            </div>
+                            <!-- **************************************************************************************-->
+
+                            </form>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
